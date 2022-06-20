@@ -32,9 +32,9 @@ class Roberta:
         self.access_token = "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"
         #self.classifier = pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli", device=0)
         self.classifier = pipeline("zero-shot-classification", 
-            model = AutoModelForSequenceClassification.from_pretrained("tuni/xlm-roberta-large-xnli-finetuned-mnli-SJP-v2", use_auth_token=self.access_token, num_labels=2, ignore_mismatched_sizes=True),
+            model = AutoModelForSequenceClassification.from_pretrained("tuni/xlm-roberta-large-xnli-finetuned-mnli-SJP-v3", use_auth_token=self.access_token, num_labels=2, ignore_mismatched_sizes=True),
             device=0, 
-            tokenizer = AutoTokenizer.from_pretrained("tuni/xlm-roberta-large-xnli-finetuned-mnli-SJP-v2", use_auth_token=self.access_token))
+            tokenizer = AutoTokenizer.from_pretrained("tuni/xlm-roberta-large-xnli-finetuned-mnli-SJP-v3", use_auth_token=self.access_token))
         self.dataset = load_dataset('swiss_judgment_prediction', language)
         self.counter = 1
         self.count = 0

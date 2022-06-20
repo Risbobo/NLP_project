@@ -168,9 +168,9 @@ print(dfCantonsN)
 print(dfLegalsN)
 
 #print("TestRun 2 but new hypothesis on german set")
-dfN.to_csv('dfRobertaTestRun3Normal-mnli-SJP-v2.csv')
-dfCantonsN.to_csv('dfCantonsRobertaTestRun3Normal-mnli-SJP-v2.csv')
-dfLegalsN.to_csv('dfLegalsRobertaTestRun3Normal-mnli-SJP-v2.csv')
+dfN.to_csv('dfRobertaTestRun3Normal.csv')
+dfCantonsN.to_csv('dfCantonsRobertaTestRun3Normal.csv')
+dfLegalsN.to_csv('dfLegalsRobertaTestRun3Normal.csv')
 
 dfL = pd.DataFrame(metricsL, columns=['Model', 'Language', 'skf1', 'mcc', 'acc', 'TrueNegatives', 'FalsePositives', 'FalseNegatives', 'TruePositives'])
 dfCantonsL = pd.DataFrame(cantonsL, columns=['Model', 'Language', 'Canton', 'Score', 'Amount', 'Accuracy'])
@@ -179,9 +179,9 @@ dfLegalsL = pd.DataFrame(legalsL, columns=['Model', 'Language', 'Legal Area', 'S
 #print(dfCantonsL)
 print(dfLegalsL)
 
-dfL.to_csv('dfRobertaTestRun3EngLabel-mnli-SJP-v2.csv')
-dfCantonsL.to_csv('dfCantonsRobertaTestRun3EngLabel-mnli-SJP-v2.csv')
-dfLegalsL.to_csv('dfLegalsRobertaTestRun3EngLabel-mnli-SJP-v2.csv')
+dfL.to_csv('dfRobertaTestRun3EngLabel.csv')
+dfCantonsL.to_csv('dfCantonsRobertaTestRun3EngLabel.csv')
+dfLegalsL.to_csv('dfLegalsRobertaTestRun3EngLabel.csv')
 
 dfH = pd.DataFrame(metricsH, columns=['Model', 'Language', 'skf1', 'mcc', 'acc', 'TrueNegatives', 'FalsePositives', 'FalseNegatives', 'TruePositives'])
 dfCantonsH = pd.DataFrame(cantonsH, columns=['Model', 'Language', 'Canton', 'Score', 'Amount', 'Accuracy'])
@@ -190,9 +190,9 @@ dfLegalsH = pd.DataFrame(legalsH, columns=['Model', 'Language', 'Legal Area', 'S
 #print(dfCantonsH)
 #print(dfLegalsH)
 
-dfH.to_csv('dfRobertaTestRun3EngHypo-mnli-SJP-v2.csv')
-dfCantonsH.to_csv('dfCantonsRobertaTestRun3EngHypo-mnli-SJP-v2.csv')
-dfLegalsH.to_csv('dfLegalsRobertaTestRun3EngHypo-mnli-SJP-v2.csv')
+dfH.to_csv('dfRobertaTestRun3EngHypo.csv')
+dfCantonsH.to_csv('dfCantonsRobertaTestRun3EngHypo.csv')
+dfLegalsH.to_csv('dfLegalsRobertaTestRun3EngHypo.csv')
 
 dfHL = pd.DataFrame(metricsHL, columns=['Model', 'Language', 'skf1', 'mcc', 'acc', 'TrueNegatives', 'FalsePositives', 'FalseNegatives', 'TruePositives'])
 dfCantonsHL = pd.DataFrame(cantonsHL, columns=['Model', 'Language', 'Canton', 'Score', 'Amount', 'Accuracy'])
@@ -201,6 +201,6 @@ dfLegalsHL = pd.DataFrame(legalsHL, columns=['Model', 'Language', 'Legal Area', 
 #print(dfCantonsHL)
 print(dfLegalsHL)
 
-dfHL.to_csv('dfRobertaTestRun3EngHypoLabel-mnli-SJP-v2.csv')
-dfCantonsHL.to_csv('dfCantonsRobertaTestRun3EngHypoLabel-mnli-SJP-v2.csv')
-dfLegalsHL.to_csv('dfLegalsRobertaTestRun3EngHypoLabel-mnli-SJP-v2.csv')
+dfHL.to_csv('dfRobertaTestRun3EngHypoLabel.csv')
+dfCantonsHL.to_csv('dfCantonsRobertaTestRun3EngHypoLabel.csv')
+dfLegalsHL.to_csv('dfLegalsRobertaTestRun3EngHypoLabel.csv')
